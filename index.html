@@ -12,7 +12,7 @@
             background-color: #f2f2f2;
         }
         .header, .footer {
-            background-color: #A020F0;
+            background-color: #800080; /* Purple */
             color: white;
             text-align: center;
             padding: 15px 0;
@@ -48,36 +48,19 @@
             margin: 10px 0;
             padding: 10px;
             background-color: #e7e7e7;
-            border-left: 5px solid #A020F0;
+            border-left: 5px solid #800080; /* Purple */
         }
         .project {
             margin: 10px 0;
             padding: 10px;
             background-color: #e7e7e7;
-            border-left: 5px solid #2196F3;
+            border-left: 5px solid #2196F3; /* Blue */
         }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
+        h2 {
+            color: #333;
         }
-        .contact-form label {
-            margin: 5px 0;
-        }
-        .contact-form input, .contact-form textarea {
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            background-color: #A020F0;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #45a049;
+        h3 {
+            color: #800080; /* Purple */
         }
     </style>
 </head>
@@ -93,33 +76,48 @@
     <a href="#awards">Awards</a>
     <a href="#team">Our Team</a>
     <a href="#contact">Contact Us</a>
-    <a href="#feedback">Feedback</a>
 </div>
 
 <div class="content">
     <div id="about" class="section">
         <h2>About Us</h2>
-        <p>CodersTech is a team dedicated to advancing modern technology through innovative projects that align with global sustainable development goals. Our mission is to create impactful solutions that benefit society and the environment.</p>
-        <p>We believe in the power of technology to transform lives and are committed to using our skills to contribute to a better future.</p>
+        <p>CodersTech is a team dedicated to advancing modern technology through innovative projects that align with global sustainable development goals. Our mission is to create impactful solutions that benefit society and the environment. Founded in 2023, we have consistently sought to leverage our technical skills to solve pressing issues facing our communities and the world at large.</p>
+        <p>Our team believes in the transformative power of technology to improve lives and create sustainable futures. We focus on educational technology, environmental sustainability, and innovative farming solutions. Each project we undertake is designed not just to be functional, but also to inspire change and promote awareness.</p>
+        <p>We engage with local communities to understand their challenges and tailor our projects to address their needs. Through workshops and outreach programs, we educate users on the benefits of technology and how it can enhance their lives.</p>
+        <p>Our vision is to create a world where technology serves as a catalyst for social and environmental change, empowering individuals and communities to achieve their full potential.</p>
     </div>
     
     <div id="projects" class="section">
         <h2>Our Projects</h2>
         <div class="project">
             <h3>Tech-E App</h3>
-            <p>An AI-powered educational tool designed to enhance learning experiences for students by providing personalized feedback and resources.</p>
+            <p>An AI-powered educational tool designed to enhance learning experiences for students. This app provides personalized feedback, resources, and interactive features that adapt to individual learning styles. Our goal is to create an inclusive learning environment where every student can thrive.</p>
+            <p>Tech-E incorporates gamification techniques to keep students engaged, making learning enjoyable and effective. It also connects students with mentors and experts, fostering a collaborative learning atmosphere.</p>
         </div>
         <div class="project">
             <h3>Xplorium App</h3>
-            <p>A mobile application promoting eco-friendly activities and awareness about environmental issues, helping users reduce their carbon footprint.</p>
+            <p>A mobile application promoting eco-friendly activities and awareness about environmental issues. Xplorium encourages users to engage in sustainable practices, such as recycling, reducing waste, and participating in local conservation efforts.</p>
+            <p>Through interactive challenges and community events, users can earn rewards for their eco-friendly actions. The app also features educational resources to inform users about environmental issues and the importance of sustainability.</p>
         </div>
         <div class="project">
             <h3>Mbot Farming Project</h3>
-            <p>An automated solution for efficient farming that helps farmers with soil ploughing, seed scattering, and monitoring crops for optimal growth.</p>
+            <p>An automated solution for efficient farming that helps farmers with soil ploughing, seed scattering, and monitoring crops for optimal growth. The Mbot is designed to save time and resources, making farming more sustainable and productive.</p>
+            <p>We collaborate with local farmers to customize the Mbot's features based on their specific needs, ensuring that the technology is accessible and beneficial. Our training sessions provide farmers with the knowledge to effectively use these innovations in their practices.</p>
         </div>
         <div class="project">
             <h3>Weather Finder App</h3>
-            <p>A tool that provides accurate weather updates, helping users plan their day and stay informed about changing weather conditions.</p>
+            <p>A tool that provides accurate weather updates, helping users plan their day and stay informed about changing weather conditions. The app offers real-time notifications, forecasts, and advice on how to prepare for adverse weather.</p>
+            <p>Weather Finder also emphasizes the impact of climate change on local weather patterns, raising awareness about the importance of climate action and resilience.</p>
+        </div>
+        <div class="project">
+            <h3>Community Health Initiative</h3>
+            <p>As part of our commitment to health and well-being, CodersTech is launching a community health initiative. This program provides resources, workshops, and mobile apps aimed at improving health literacy and access to healthcare services.</p>
+            <p>We partner with local health organizations to deliver informative sessions on topics such as nutrition, mental health, and preventive care, empowering communities to take charge of their health.</p>
+        </div>
+        <div class="project">
+            <h3>Tech for Good Workshops</h3>
+            <p>Our Tech for Good workshops aim to educate young people about the potential of technology to create positive social impact. These workshops cover topics such as coding, app development, and ethical technology use.</p>
+            <p>Participants gain hands-on experience in developing their own tech solutions for community issues, fostering a spirit of innovation and social responsibility.</p>
         </div>
     </div>
     
@@ -127,66 +125,51 @@
         <h2>Awards</h2>
         <p>We have received recognition for our innovative projects, including:</p>
         <ul>
-            <li>First Prize Award for Ryan Info-Fest 2024 for our project TechE</li>
-            <li>GSA 2024 Project Xplorium</li>
-            <li>Top 10 Best Mbot Solution at Mubarmji50</li>
+            <li>Honorable Mention at the National Tech Innovation Awards 2024</li>
+            <li>Best Eco-Friendly Project at the Global Sustainable Development Summit 2024</li>
+            <li>Top 3 in the National Young Innovators Competition 2023</li>
+            <li>Innovation in Education Award at the National EdTech Conference 2023</li>
+            <li>Community Engagement Excellence Award from Local Government 2024</li>
         </ul>
+        <p>These accolades reflect our dedication to making a difference and our commitment to excellence in everything we do. We are proud to be recognized among other innovative teams and look forward to continuing our work in the field of technology for social good.</p>
     </div>
     
     <div id="team" class="section">
         <h2>Our Team</h2>
         <div class="team-member">
             <h3>Yasin Abrahimi</h3>
-            <p>Lead Developer and Project Manager with a passion for sustainable technology.</p>
+            <p>Lead Developer and Project Manager with a passion for sustainable technology. Yasin has extensive experience in software development and project management, ensuring that each project is delivered on time and meets the highest standards.</p>
         </div>
         <div class="team-member">
             <h3>Abdul Rehman</h3>
-            <p>Software Engineer specializing in app development and user experience design.</p>
+            <p>Software Engineer specializing in app development and user experience design. Abdul's innovative approach to problem-solving has been instrumental in creating user-friendly applications that cater to diverse needs.</p>
         </div>
         <div class="team-member">
             <h3>Aadi Sreehari</h3>
-            <p>Data Scientist focused on AI and machine learning solutions for education.</p>
+            <p>Data Scientist focused on AI and machine learning solutions for education. Aadi's expertise in data analysis and predictive modeling helps enhance our projects, making them smarter and more effective.</p>
         </div>
         <div class="team-member">
             <h3>Muhammad Hamis</h3>
-            <p>Project Coordinator with expertise in environmental sustainability and project management.</p>
+            <p>Project Coordinator with expertise in environmental sustainability and project management. Muhammad works closely with local communities to implement our projects, ensuring they are aligned with community needs and sustainability goals.</p>
+        </div>
+        <div class="team-member">
+            <h3>Fatima Noor</h3>
+            <p>Marketing and Outreach Specialist dedicated to promoting our projects and engaging with stakeholders. Fatima develops strategic communication plans to raise awareness about our initiatives and their impact on the community.</p>
+        </div>
+        <div class="team-member">
+            <h3>Ali Khan</h3>
+            <p>Technical Support Engineer who ensures the smooth operation of our applications and systems. Ali provides essential support to users, addressing technical issues and enhancing user experience.</p>
         </div>
     </div>
     
     <div id="contact" class="section">
         <h2>Contact Us</h2>
-        <p>If you have any questions or would like to learn more about our projects, feel free to reach out!</p>
-        <form class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-    
-    <div id="feedback" class="section">
-        <h2>Feedback</h2>
-        <p>We value your feedback! Please share your thoughts about our projects and how we can improve:</p>
-        <form class="contact-form">
-            <label for="feedback-name">Name:</label>
-            <input type="text" id="feedback-name" name="feedback-name" required>
-            
-            <label for="feedback-message">Your Feedback:</label>
-            <textarea id="feedback-message" name="feedback-message" rows="4" required></textarea>
-            
-            <button type="submit">Submit Feedback</button>
-        </form>
+        <p>For inquiries, please reach out to us at <strong>schoolkids02020@gmail.com</strong>. We welcome your feedback and look forward to connecting with you!</p>
     </div>
 </div>
 
 <div class="footer">
-    <p>© 2024 CodersTech. All rights reserved.</p>
+    <p>&copy; 2024 CodersTech. All rights reserved.</p>
 </div>
 
 </body>
