@@ -12,7 +12,7 @@
             background-color: #f2f2f2;
         }
         .header, .footer {
-            background-color: #4CAF50;
+            background-color: #A020F0;
             color: white;
             text-align: center;
             padding: 15px 0;
@@ -44,6 +44,41 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+        .team-member {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e7e7e7;
+            border-left: 5px solid #A020F0;
+        }
+        .project {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e7e7e7;
+            border-left: 5px solid #2196F3;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin: 5px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #A020F0;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -56,34 +91,97 @@
     <a href="#about">About Us</a>
     <a href="#projects">Our Projects</a>
     <a href="#awards">Awards</a>
+    <a href="#team">Our Team</a>
     <a href="#contact">Contact Us</a>
+    <a href="#feedback">Feedback</a>
 </div>
 
 <div class="content">
     <div id="about" class="section">
         <h2>About Us</h2>
-        <p>CodersTech is a team dedicated to advancing modern technology through innovative projects that align with global sustainable development goals.</p>
+        <p>CodersTech is a team dedicated to advancing modern technology through innovative projects that align with global sustainable development goals. Our mission is to create impactful solutions that benefit society and the environment.</p>
+        <p>We believe in the power of technology to transform lives and are committed to using our skills to contribute to a better future.</p>
     </div>
     
     <div id="projects" class="section">
         <h2>Our Projects</h2>
-        <ul>
-            <li>Tech-E App: An AI-powered educational tool.</li>
-            <li>Xplorium App: Promoting eco-friendly activities and awareness.</li>
-            <li>Mbot Farming Project: An automated solution for efficient farming.</li>
-            <li>Weather Finder App: A tool for accurate weather updates.</li>
-        </ul>
+        <div class="project">
+            <h3>Tech-E App</h3>
+            <p>An AI-powered educational tool designed to enhance learning experiences for students by providing personalized feedback and resources.</p>
+        </div>
+        <div class="project">
+            <h3>Xplorium App</h3>
+            <p>A mobile application promoting eco-friendly activities and awareness about environmental issues, helping users reduce their carbon footprint.</p>
+        </div>
+        <div class="project">
+            <h3>Mbot Farming Project</h3>
+            <p>An automated solution for efficient farming that helps farmers with soil ploughing, seed scattering, and monitoring crops for optimal growth.</p>
+        </div>
+        <div class="project">
+            <h3>Weather Finder App</h3>
+            <p>A tool that provides accurate weather updates, helping users plan their day and stay informed about changing weather conditions.</p>
+        </div>
     </div>
     
     <div id="awards" class="section">
         <h2>Awards</h2>
-        <p>We have received recognition for our innovative projects, including honorable mentions and awards for our contributions to technology and sustainability.</p>
+        <p>We have received recognition for our innovative projects, including:</p>
+        <ul>
+            <li>Honorable Mention at the National Tech Innovation Awards 2024</li>
+            <li>Best Eco-Friendly Project at the Global Sustainable Development Summit 2024</li>
+            <li>Top 3 in the National Young Innovators Competition 2023</li>
+        </ul>
+    </div>
+    
+    <div id="team" class="section">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <h3>Yasin Abrahimi</h3>
+            <p>Lead Developer and Project Manager with a passion for sustainable technology.</p>
+        </div>
+        <div class="team-member">
+            <h3>Abdul Rehman</h3>
+            <p>Software Engineer specializing in app development and user experience design.</p>
+        </div>
+        <div class="team-member">
+            <h3>Aadi Sreehari</h3>
+            <p>Data Scientist focused on AI and machine learning solutions for education.</p>
+        </div>
+        <div class="team-member">
+            <h3>Muhammad Hamis</h3>
+            <p>Project Coordinator with expertise in environmental sustainability and project management.</p>
+        </div>
     </div>
     
     <div id="contact" class="section">
         <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:schoolkids02020@gmail.com">schoolkids02020@gmail.com</a></p>
-        <p>School: Shining Star International School</p>
+        <p>If you have any questions or would like to learn more about our projects, feel free to reach out!</p>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+    <div id="feedback" class="section">
+        <h2>Feedback</h2>
+        <p>We value your feedback! Please share your thoughts about our projects and how we can improve:</p>
+        <form class="contact-form">
+            <label for="feedback-name">Name:</label>
+            <input type="text" id="feedback-name" name="feedback-name" required>
+            
+            <label for="feedback-message">Your Feedback:</label>
+            <textarea id="feedback-message" name="feedback-message" rows="4" required></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
     </div>
 </div>
 
